@@ -1,0 +1,22 @@
+{
+  "users": [
+    { 
+      "id": 1,
+      "name": "Sara",
+      "age": 23,
+      "gender": "Female",
+      "email": "sara@gmail.com",
+      "password": "1234",
+      "role": "guest"
+    },
+    { 
+      "id": 2,
+      "name": "Alex",
+      "age": 30,
+      "gender": "Male",
+      "email": "alex@gmail.com",
+      "password": "1234",
+      "role": "guest"
+    }
+  ] 
+}
