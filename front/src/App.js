@@ -12,6 +12,7 @@ import LoaderPage from "./Pages/LoaderPage/LoaderPage";
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
 import { SET_TOKEN, SET_IS_AUTH, SET_STATUS_CODE } from "./redux/actions/AuthActions";
+import { URL } from "./API/API";
 
 
 
@@ -23,7 +24,7 @@ function App() {
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await axios.get("http://localhost:4000/auth");
+        const response = await axios.get(`${URL}/auth`);
         console.log(response);
         dispatch(SET_TOKEN(response.config.headers["x-access-token"]));
         dispatch(SET_IS_AUTH(response.data.isAuth));
